@@ -1,4 +1,4 @@
-// Notes: styling, state, static state, map, react dev tool
+// Notes: styling, state, static state, setState, map, react dev tool
 
 const root = document.getElementById('root');
 
