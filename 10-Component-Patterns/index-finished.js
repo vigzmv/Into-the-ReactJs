@@ -1,6 +1,7 @@
 // Component Patterns.
 // Statefull, Controlling, Smart Component
 // Stateless, Presentational, Dumb Component
+// Components, Containers
 // state lifted to top
 // handlers
 
