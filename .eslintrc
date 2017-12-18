@@ -32,7 +32,7 @@
     "import": "off",
     "func-names": "off",
     "space-before-function-paren": "off",
-    "comma-dangle": 1,
+    "comma-dangle": "off",
     "max-len": "off",
     "import/extensions": "off",
     "no-underscore-dangle": "off",
@@ -42,6 +42,7 @@
     "react/forbid-prop-types": "off",
     "react/no-unescaped-entities": "off",
     "react/prefer-stateless-function": "off",
+    "react/prop-types": "off",
     "react/jsx-filename-extension": [
       1,
       {
@@ -67,7 +68,6 @@
     "prettier/prettier": [
       "error",
       {
-        "trailingComma": "es5",
         "singleQuote": true,
         "printWidth": 120
       }
