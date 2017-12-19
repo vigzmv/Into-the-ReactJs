@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Toggle from './Toggle-Finished';
+import Toggle from './Toggle';
 import './App.css';
 
 function App() {
