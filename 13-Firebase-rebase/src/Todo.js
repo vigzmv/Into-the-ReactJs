@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { List } from '../../Components';
+import List from './List';
 import './Todo.css';
-import base from './../../re-base';
+import base from './re-base';
 
 class Todo extends Component {
   constructor(props) {
@@ -9,23 +9,32 @@ class Todo extends Component {
 
     this.state = {
       todoList: [],
-      inputValue: '',
+      inputValue: ''
     };
+  }
+
+  // re-base ing
+  componentDidMount() {
+    base.syncState(`todoList`, {
+      context: this,
+      state: 'todoList',
+      asArray: true
+    });
   }
 
   addTodo = () => {
     this.setState({
       todoList: [
         ...this.state.todoList,
-        { content: this.state.inputValue, completed: false },
+        { content: this.state.inputValue, completed: false }
       ],
-      inputValue: '',
+      inputValue: ''
     });
   };
 
   handleInputChange = e => {
     this.setState({
-      inputValue: e.target.value,
+      inputValue: e.target.value
     });
   };
 
@@ -44,15 +53,6 @@ class Todo extends Component {
 
     this.setState({ todoList: newTotoList });
   };
-
-  // re-base ing
-  componentDidMount() {
-    base.syncState(`todoList`, {
-      context: this,
-      state: 'todoList',
-      asArray: true,
-    });
-  }
 
   render() {
     return (

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { List } from '../../Components';
+import List from './List';
 import './Todo.css';
 
 class Todo extends Component {
@@ -8,7 +8,7 @@ class Todo extends Component {
 
     this.state = {
       todoList: [],
-      inputValue: '',
+      inputValue: ''
     };
   }
 
@@ -16,15 +16,15 @@ class Todo extends Component {
     this.setState({
       todoList: [
         ...this.state.todoList,
-        { content: this.state.inputValue, completed: false },
+        { content: this.state.inputValue, completed: false }
       ],
-      inputValue: '',
+      inputValue: ''
     });
   };
 
   handleInputChange = e => {
     this.setState({
-      inputValue: e.target.value,
+      inputValue: e.target.value
     });
   };
 

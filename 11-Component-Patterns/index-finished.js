@@ -29,7 +29,7 @@ class Todo extends React.Component {
 
     this.state = {
       todoList: [],
-      inputValue: '',
+      inputValue: ''
     };
   }
 
@@ -37,15 +37,15 @@ class Todo extends React.Component {
     this.setState({
       todoList: [
         ...this.state.todoList,
-        { content: this.state.inputValue, completed: false },
+        { content: this.state.inputValue, completed: false }
       ],
-      inputValue: '',
+      inputValue: ''
     });
   };
 
   handleInputChange = e => {
     this.setState({
-      inputValue: e.target.value,
+      inputValue: e.target.value
     });
   };
 

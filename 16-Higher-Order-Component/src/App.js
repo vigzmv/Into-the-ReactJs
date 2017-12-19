@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Users } from './../../components';
+import Users from './Users';
+
 import './App.css';
 
 class App extends Component {

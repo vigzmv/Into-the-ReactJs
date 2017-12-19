@@ -1,7 +1,9 @@
 import React from 'react';
 
 const UserList = ({ users, filterText }) => {
-  const filteredUsers = users.filter(user => user.name.indexOf(filterText) !== -1);
+  const filteredUsers = users.filter(
+    user => user.name.indexOf(filterText) !== -1
+  );
 
   return (
     <ul>

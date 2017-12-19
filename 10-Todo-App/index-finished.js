@@ -18,20 +18,20 @@ class Todo extends React.Component {
 
     this.state = {
       todoList: [],
-      inputValue: '',
+      inputValue: ''
     };
   }
 
   addTodo = () => {
     this.setState({
       todoList: [...this.state.todoList, { content: this.state.inputValue }],
-      inputValue: '',
+      inputValue: ''
     });
   };
 
   handleInputChange = e => {
     this.setState({
-      inputValue: e.target.value,
+      inputValue: e.target.value
     });
   };
 
