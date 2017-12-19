@@ -2,8 +2,14 @@ import React from 'react';
 
 function Switch({ on, ...props }) {
   return (
-    <div className="toggleWrapper">
-      <input type="checkbox" className="dn" id="dn" checked={on} {...props} />
+    <div className="toggleWrapper---nulled">
+      <input
+        type="checkbox"
+        className="dn"
+        id="dn"
+        checked={on || false}
+        {...props}
+      />
       <label htmlFor="dn" className="toggle">
         <span className="toggle__handler">
           <span className="crater crater--1" />
