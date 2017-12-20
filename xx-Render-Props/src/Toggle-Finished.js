@@ -18,7 +18,7 @@ class Toggle extends React.Component {
 
   render() {
     const { on } = this.state;
-    return this.props.renderSwitch({ on, toggle: this.toggle });
+    return this.props.render({ on, toggle: this.toggle });
   }
 }
 
@@ -28,7 +28,7 @@ function ToggleApp() {
   return (
     <Toggle
       textPosition="bottom"
-      renderSwitch={({ on, toggle }) => (
+      render={({ on, toggle }) => (
         <div className="toggleWrapper">
           <span>{on ? 'It is Night' : 'It is Day'}</span>
           <Switch on={on} onClick={toggle} />
