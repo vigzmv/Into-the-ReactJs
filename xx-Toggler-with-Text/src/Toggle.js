@@ -16,7 +16,11 @@ class Toggle extends React.Component {
 
   render() {
     const { on } = this.state;
-    return <Switch on={on} onClick={this.toggle} />;
+    return (
+      <div className="toggleWrapper">
+        <Switch on={on} onClick={this.toggle} />{' '}
+      </div>
+    );
   }
 }
 export default Toggle;

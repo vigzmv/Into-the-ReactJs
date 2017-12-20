@@ -2,7 +2,7 @@ import React from 'react';
 
 function Switch({ on, ...props }) {
   return (
-    <div className="toggleWrapper">
+    <div className="toggleWrapper---nulled">
       <input
         type="checkbox"
         className="dn"
