@@ -32,55 +32,58 @@ state
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 <script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
-<div id="root"></div>
+<body>
 
-<script type="text/babel">
-  const root = document.getElementById(`root`);
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const root = document.getElementById(`root`);
 
 
-  class App extends React.Component {
+    class App extends React.Component {
 
-    constructor() {
-      super();
-      console.log(`Contructor: I am called 1st`);
+      constructor() {
+        super();
+        console.log(`Contructor: I am called 1st`);
+      }
+
+      componentWillMount() {
+        console.log(`componentWillMount: I am called 2nd`);
+      }
+
+      render() {
+        console.log(`render: I am called 3rd`);
+        return (
+          <div> React.Component </div>
+        );
+      }
+
+      componentDidMount() {
+        console.log(`componentDidMount: I am called 4th`);
+      }
+
+      componentWillReceiveProps() {
+        console.log(`componentWillReceiveProps: I am called when I receive new props`)
+      }
+
+      shouldComponentUpdate(nextProps, nextState) {
+        console.log(`shouldComponentUpdate: I tell React to re-render or not`);
+      }
+
+      componentWillUpdate() {
+        console.log(`componentWillUpdate: I am called before a re-render`);
+      }
+
+      componentDidUpdate(prevProps, prevState) {
+        console.log(`componentDidUpdate: I am called after a re-render`);
+      }
+
+      componentWillUnmount() {
+        console.log(`I am called before the component is removed from the DOM`);
+      }
     }
 
-    componentWillMount() {
-      console.log(`componentWillMount: I am called 2nd`);
-    }
 
-    render() {
-      console.log(`render: I am called 3rd`);
-      return (
-        <div> React.Component </div>
-      );
-    }
-
-    componentDidMount() {
-      console.log(`componentDidMount: I am called 4th`);
-    }
-
-    componentWillReceiveProps() {
-      console.log(`componentWillReceiveProps: I am called when I receive new props`)
-    }
-
-    shouldComponentUpdate(nextProps, nextState) {
-      console.log(`shouldComponentUpdate: I tell React to re-render or not`);
-    }
-
-    componentWillUpdate() {
-      console.log(`componentWillUpdate: I am called before a re-render`);
-    }
-
-    componentDidUpdate(prevProps, prevState) {
-      console.log(`componentDidUpdate: I am called after a re-render`);
-    }
-
-    componentWillUnmount() {
-      console.log(`I am called before the component is removed from the DOM`);
-    }
-  }
-
-
-  ReactDOM.render(<App />, root);
-</script>
+    ReactDOM.render(<App />, root);
+  </script>
+</body>

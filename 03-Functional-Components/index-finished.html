@@ -5,70 +5,73 @@
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 <script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
-<div id="root"></div>
+<body>
 
-<script type="text/babel">
-  const root = document.getElementById('root');
+  <div id="root"></div>
 
-  const helloWorld = <div>Hello World</div>
+  <script type="text/babel">
+    const root = document.getElementById('root');
 
-  const elm = (
-    <div className="container">
-      <div>{helloWorld}</div>
-      <div>{helloWorld}</div>
-      <div>{helloWorld}</div>
-    </div>
-  );
+    const helloWorld = <div>Hello World</div>
 
-
-
-  const message = (props) => <div>{props.msg}</div>;
-  // const Message = (props) => <div>{props.msg}</div>;
-  // const Message = (props) => <div>{props.children}</div>;
-
-  // const elm = (
-  //   <div className="container">
-  //     {message({msg:'Hello World'})}
-  //     {message({msg:'Goodbye World'})}
-  //     {message({msg:'Hi There'})}
-  //   </div>
-  // );
+    const elm = (
+      <div className="container">
+        <div>{helloWorld}</div>
+        <div>{helloWorld}</div>
+        <div>{helloWorld}</div>
+      </div>
+    );
 
 
 
-  // const elm = (
-  //   <div className="container">
-  //     {React.createElement(message, {msg:'Hello World'})}
-  //     {React.createElement(message, {msg:'Goodbye World'})}
-  //   </div>
-  // );
+    const message = (props) => <div>{props.msg}</div>;
+    // const Message = (props) => <div>{props.msg}</div>;
+    // const Message = (props) => <div>{props.children}</div>;
+
+    // const elm = (
+    //   <div className="container">
+    //     {message({msg:'Hello World'})}
+    //     {message({msg:'Goodbye World'})}
+    //     {message({msg:'Hi There'})}
+    //   </div>
+    // );
 
 
 
-  /* JSXing */
-
-  // const elm = (
-  //   <div className="container">
-  //     {/*<message /> */} {/* Notes: open babel-repl */}
-
-  //     <Message />
-  //     <Message msg="Hello World"/>
-  //   </div>
-  // );
+    // const elm = (
+    //   <div className="container">
+    //     {React.createElement(message, {msg:'Hello World'})}
+    //     {React.createElement(message, {msg:'Goodbye World'})}
+    //   </div>
+    // );
 
 
 
-  /* Composing */
+    /* JSXing */
 
-  // const elm = (
-  //   <div className="container">
-  //     <Message>
-  //       Hello World
-  //       <Message>Goodbye World
-  //       </Message>
-  //     </Message>
-  //   </div>
-  // );
+    // const elm = (
+    //   <div className="container">
+    //     {/*<message /> */} {/* Notes: open babel-repl */}
 
-  ReactDOM.render(elm, root);
-</script>
+    //     <Message />
+    //     <Message msg="Hello World"/>
+    //   </div>
+    // );
+
+
+
+    /* Composing */
+
+    // const elm = (
+    //   <div className="container">
+    //     <Message>
+    //       Hello World
+    //       <Message>Goodbye World
+    //       </Message>
+    //     </Message>
+    //   </div>
+    // );
+
+    ReactDOM.render(elm, root);
+  </script>
+</body>

@@ -4,13 +4,17 @@
 <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 
-<div id="root"></div>
+<body>
 
-<script type="text/javascript">
-  const root = document.getElementById('root');
+  <div id="root"></div>
 
-  // (element name, props, [children])
-  const elm = React.createElement('div', { className: 'container' }, 'Hello World');
+  <script type="text/javascript">
+    const root = document.getElementById('root');
 
-  ReactDOM.render(elm, root);
-</script>
+    // (element name, props, [children])
+    const elm = React.createElement('div', { className: 'container' }, 'Hello World');
+
+    ReactDOM.render(elm, root);
+  </script>
+
+</body>

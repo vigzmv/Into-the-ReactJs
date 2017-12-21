@@ -5,9 +5,11 @@
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 <script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
-<div id="root"></div>
+<body>
 
-<script type="text/babel">
+  <div id="root"></div>
+
+  <script type="text/babel">
   const root = document.getElementById('root');
 
   const elm = <div className="container">Hello World</div>;
@@ -18,15 +20,17 @@
   // const props = {
     // className: 'container',
     // children: 'Hello World'
-  // };
+    // };
 
-  // const elm = <div {...props}></div>;
+    // const elm = <div {...props}></div>;
 
-  // const elm = <div {...props}>Hi There</div>;
+    // const elm = <div {...props}>Hi There</div>;
 
   // const elm = <div {...props} onClick={()=>alert('Clicked')}>Hi There</div>;
 
   // const elm = <div {...props}>Hi There</div>;
 
   ReactDOM.render(elm, root);
-</script>
+  </script>
+
+</body>

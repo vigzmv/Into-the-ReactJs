@@ -6,35 +6,38 @@
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 <script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
-<div id="root"></div>
+<body>
 
-<script type="text/babel">
-  const root = document.getElementById('root');
+  <div id="root"></div>
 
-  const state = {
-    clicksCount: 0,
-    inputValue: ''
-  };
+  <script type="text/javascript">
+    const root = document.getElementById('root');
 
-  function App(params) {
-    return (
-      <div>
-        <p>
-          Click Counter: {state.clicksCount}
-        </p>
-        <p>
-          <button>Click Me  👈</button>
-        </p>
-        <p>
-          Input Value: {state.inputValue}
-        </p>
-        <p>
-          <input />
-        </p>
-      </div>
-    )
-  }
+    const state = {
+      clicksCount: 0,
+      inputValue: ''
+    };
+
+    function App(params) {
+      return (
+        <div>
+          <p>
+            Click Counter: {state.clicksCount}
+          </p>
+          <p>
+            <button>Click Me  👈</button>
+          </p>
+          <p>
+            Input Value: {state.inputValue}
+          </p>
+          <p>
+            <input />
+          </p>
+        </div>
+      )
+    }
 
 
-  ReactDOM.render(<App />, root);
-</script>
+    ReactDOM.render(<App />, root);
+  </script>
+</body>

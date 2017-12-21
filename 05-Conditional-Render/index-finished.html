@@ -4,46 +4,49 @@
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 <script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
-<div id="root"></div>
+<body>
 
-<script type="text/babel">
-  const root = document.getElementById('root');
+  <div id="root"></div>
 
-  /* if--else*/
+  <script type="text/babel">
+    const root = document.getElementById('root');
 
-  // const Message = (props) => {
-  //   if(props.msg)
-  //     return <div>Message: {props.msg}</div>;
-  //   else
-  //     return <div>No Message</div>;
-  // }
+    /* if--else*/
 
-
-
-  /* using terney */
-
-  // const Message = (props) => {
-  //   return props.msg
-  //     ? <div>Message: {props.msg}</div>
-  //     : <div>No Message</div>;
-  // }
+    // const Message = (props) => {
+    //   if(props.msg)
+    //     return <div>Message: {props.msg}</div>;
+    //   else
+    //     return <div>No Message</div>;
+    // }
 
 
 
-  /* using ternery inside jsx */
+    /* using terney */
 
-  // const Message = (props) => {
-  //   return (
-  //     <div>{props.msg ? `Message: ${props.msg}`: 'No Message'}</div>
-  //   )
-  // }
+    // const Message = (props) => {
+    //   return props.msg
+    //     ? <div>Message: {props.msg}</div>
+    //     : <div>No Message</div>;
+    // }
 
 
-  const elm = (
-    <div className="container">
-      <Message msg={1}/>
-    </div>
-  );
 
-  ReactDOM.render(elm, root);
-</script>
+    /* using ternery inside jsx */
+
+    // const Message = (props) => {
+    //   return (
+    //     <div>{props.msg ? `Message: ${props.msg}`: 'No Message'}</div>
+    //   )
+    // }
+
+
+    const elm = (
+      <div className="container">
+        <Message msg={1} />
+      </div>
+    );
+
+    ReactDOM.render(elm, root);
+  </script>
+</body>

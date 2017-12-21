@@ -4,18 +4,21 @@
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 <script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
-<div id="root"></div>
+<body>
 
-<script type="text/babel">
-  const root = document.getElementById('root');
+  <div id="root"></div>
 
-  const time = new Date().toLocaleTimeString();
+  <script type="text/babel">
+    const root = document.getElementById('root');
 
-  const elm = (
-    <div className="container">
-      Time: {time}
-    </div>
-  );
+    const time = new Date().toLocaleTimeString();
 
-  ReactDOM.render(elm, root);
-</script>
+    const elm = (
+      <div className="container">
+        Time: {time}
+      </div>
+    );
+
+    ReactDOM.render(elm, root);
+  </script>
+</body>

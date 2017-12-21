@@ -6,58 +6,61 @@
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 <script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
-<div id="root"></div>
+<body>
 
-<script type="text/babel">
-  const root = document.getElementById('root');
+  <div id="root"></div>
 
-  const state = {
-    clicksCount: 0,
-    inputValue: ''
-  };
+  <script type="text/javascript">
+    const root = document.getElementById('root');
+
+    const state = {
+      clicksCount: 0,
+      inputValue: ''
+    };
 
 
-  function handleButtonClick() {
-    setState({clicksCount: state.clicksCount + 1});
-  }
+    function handleButtonClick() {
+      setState({ clicksCount: state.clicksCount + 1 });
+    }
 
-  function handleInputChange(e) {
-    setState({inputValue: e.target.value});
-  }
+    function handleInputChange(e) {
+      setState({ inputValue: e.target.value });
+    }
 
-  function App(params) {
-    return (
-      <div>
-        <p>
-          Click Counter: {state.clicksCount}
-        </p>
-        <p>
-          <button onClick={handleButtonClick}>
-            Click Me  👈
+    function App(params) {
+      return (
+        <div>
+          <p>
+            Click Counter: {state.clicksCount}
+          </p>
+          <p>
+            <button onClick={handleButtonClick}>
+              Click Me  👈
           </button>
-        </p>
-        <p>
-          Input Value: {state.inputValue}
-        </p>
-        <p>
-          <input
-            onChange={handleInputChange}
-            value={state.inputValue}
-          />
-        </p>
-      </div>
-    )
-  }
+          </p>
+          <p>
+            Input Value: {state.inputValue}
+          </p>
+          <p>
+            <input
+              onChange={handleInputChange}
+              value={state.inputValue}
+            />
+          </p>
+        </div>
+      )
+    }
 
-  function setState(newState) {
-    Object.assign(state, newState);
-    // Object.assign({}, state, newState);
+    function setState(newState) {
+      Object.assign(state, newState);
+      // Object.assign({}, state, newState);
+      renderApp();
+    }
+
+    function renderApp() {
+      ReactDOM.render(<App />, root);
+    }
     renderApp();
-  }
 
-  function renderApp() {
-    ReactDOM.render(<App />, root);
-  }
-  renderApp();
-
-</script>
+  </script>
+</body>
