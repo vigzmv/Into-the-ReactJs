@@ -27,43 +27,39 @@
   </style>
 
   <script type="text/babel">
-  function Box({
-    style,
-    size,
-    className = '',
-    ...rest
-  }) {
-    const sizeClassName = size ? `box--${size}` : ''
-    return (
-      <div
-        className={`box ${className} ${sizeClassName}`}
-        style={{paddingLeft: 20, ...style}}
-        {...rest}
-      />
-    )
-  }
+
+
   const element = (
     <div>
-      <Box
-        size="small"
-        style={{backgroundColor: 'lightblue'}}
+      <div
+        className="box box--small"
+        style={{backgroundColor: 'gold'}}
       >
-        small box
-      </Box>
-      <Box
-        size="medium"
-        style={{backgroundColor: 'pink'}}
-      >
-        medium box
-      </Box>
-      <Box
-        size="large"
-        style={{backgroundColor: 'orange'}}
-      >
-        large box
-      </Box>
+        Box
+      </div>
     </div>
   )
+
+
+
+
+  // const Box = (props) => {
+  //     return <div
+  //       className={`box box--${props.size}`}
+  //       style={{ backgroundColor: 'gold' }}
+  //     >{props.children}
+  //     </div>
+  //   }
+
+  //   const element = (
+  //     <div>
+  //       <Box size="medium">
+  //         Box
+  //     </Box>
+  //     </div>
+  //   );
+
+
 
   ReactDOM.render(
     element,

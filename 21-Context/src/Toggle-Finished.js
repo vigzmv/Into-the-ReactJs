@@ -37,8 +37,6 @@ class Toggle extends React.Component {
     toggle: PropTypes.object.isRequired
   };
 
-  static defaultProps = { onToggle: () => {} };
-
   state = { on: false };
 
   getChildContext() {
@@ -50,13 +48,7 @@ class Toggle extends React.Component {
     };
   }
 
-  toggle = () =>
-    this.setState(
-      ({ on }) => ({ on: !on }),
-      () => {
-        this.props.onToggle(this.state.on);
-      }
-    );
+  toggle = () => this.setState({ on: !this.state.on });
 
   render() {
     return <div className="toggleWrapper">{this.props.children}</div>;

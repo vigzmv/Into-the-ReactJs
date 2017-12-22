@@ -20,17 +20,9 @@ class Toggle extends React.Component {
   static Night = ToggleNight;
   static Button = ToggleButton;
 
-  static defaultProps = { onToggle: () => {} };
-
   state = { on: false };
 
-  toggle = () =>
-    this.setState(
-      ({ on }) => ({ on: !on }),
-      () => {
-        this.props.onToggle(this.state.on);
-      }
-    );
+  toggle = () => this.setState({ on: !this.state.on });
 
   render() {
     const children = React.Children.map(this.props.children, child =>

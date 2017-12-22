@@ -2,17 +2,9 @@ import React from 'react';
 import Switch from './Switch';
 
 class Toggle extends React.Component {
-  static defaultProps = { onToggle: () => {} };
-
   state = { on: false };
 
-  toggle = () =>
-    this.setState(
-      ({ on }) => ({ on: !on }),
-      () => {
-        this.props.onToggle(this.state.on);
-      }
-    );
+  toggle = () => this.setState({ on: !this.state.on });
 
   render() {
     const { on } = this.state;
@@ -23,4 +15,5 @@ class Toggle extends React.Component {
     );
   }
 }
+
 export default Toggle;

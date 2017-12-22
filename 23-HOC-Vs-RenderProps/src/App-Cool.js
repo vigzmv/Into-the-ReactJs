@@ -54,7 +54,7 @@ function App() {
                             ${yWalk * -1}px ${xWalk}px 0 rgba(0,0,255,0.7)`
               }}
             >
-              WOAH!
+              React!!
             </h1>
           </div>
         );

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import SearchBar from './SearchBar';
 import UserList from './UserList';
 import './Users.css';
-import Loading from './Loading';
+// import Loading from './Loading';
 
 class Users extends Component {
   state = {
@@ -26,4 +26,5 @@ class Users extends Component {
   }
 }
 
-export default Loading('users')(Users);
+export default Users;
+// export default Loading('users')(Users);

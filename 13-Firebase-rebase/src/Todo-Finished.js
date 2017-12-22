@@ -13,6 +13,15 @@ class Todo extends Component {
     };
   }
 
+  // re-base ing
+  componentDidMount() {
+    base.syncState(`todoList`, {
+      context: this,
+      state: 'todoList',
+      asArray: true
+    });
+  }
+
   addTodo = () => {
     this.setState({
       todoList: [
