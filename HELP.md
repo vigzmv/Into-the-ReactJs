@@ -1,5 +1,9 @@
-#### Browser-sync live server for hot reloading
+#### Browser-sync server with live reloading
 
 ```sh
-browser-sync start --server --files "**/**" --no-notify --directory
+# Install browser-sync
+$ sudo npm i -g browser-sync
+
+# Run browser-sync server
+$ browser-sync start --server --files "**/**" --no-notify --directory
 ```
