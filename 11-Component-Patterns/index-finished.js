@@ -58,7 +58,7 @@ class Todo extends React.Component {
     const newTotoList = this.state.todoList;
     newTotoList[index].completed = !newTotoList[index].completed;
 
-    // immutatable method
+    // immutable method
     // const newTotoList = this.state.todoList.map((item, i) => {
     //   if (index === i) {
     //     item.completed = !item.completed;
