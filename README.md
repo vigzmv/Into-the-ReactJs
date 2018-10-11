@@ -43,3 +43,7 @@ Execute `npm install` once in root folder and switch to the respective project f
 ## More Resources
 
 * [The Beginner's Guide to ReactJS - Kent C. Dodds](https://egghead.io/courses/the-beginner-s-guide-to-reactjs)
+* [ReactJs](https://reactjs.org/)
+* [Create React App](https://github.com/facebook/create-react-app)
+* [ParcelJs](https://parceljs.org/)
+* [Rebase](https://github.com/tylermcginnis/re-base)

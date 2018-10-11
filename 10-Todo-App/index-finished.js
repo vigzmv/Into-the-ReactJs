@@ -30,8 +30,9 @@ class Todo extends React.Component {
   };
 
   handleInputChange = e => {
+    const inputValue = e.target.value;
     this.setState({
-      inputValue: e.target.value
+      inputValue
     });
   };
 

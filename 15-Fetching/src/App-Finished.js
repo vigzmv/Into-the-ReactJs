@@ -8,7 +8,7 @@ class App extends Component {
     this.state = { users: [] };
   }
 
-  // Fething Data from api
+  // Fetching Data from api
   componentDidMount() {
     fetch('https://api.randomuser.me/?nat=us,gb&results=50')
       .then(response => response.json())
