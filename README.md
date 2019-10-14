@@ -34,9 +34,9 @@ Execute `npm install` once in root folder and switch to the respective project f
 
 * **12 to 13** <br/>
   These are created with create-react-app.<br/>
-  Install node dependencies with `npm install` and then start developement server using `npm start`.<br/>
+  Install node dependencies with `npm install` and then start development server using `npm start`.<br/>
 
-* **14 to 23** <br/>
+* **14 to 24** <br/>
   These are created as parceljs projects.<br/>
   Install parceljs globally using `sudo npm install -g parcel-bundler` once and run start the server using `parcel index.html`.<br/>
 
